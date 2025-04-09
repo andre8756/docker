@@ -1,0 +1,39 @@
+{
+  "compromissos": [
+    {
+      "id": "4543",
+      "titulo": "Aniversário",
+      "descricao": "Aniversário do Vizinho",
+      "data": "16/03/2025",
+      "hora": "18h28",
+      "contatoId": "2b6d",
+      "localId": "1b03"
+    }
+  ],
+  "locais": [
+    {
+      "id": "1b03",
+      "nome": "Casa",
+      "endereco": "Palmeira, 200 - Itoupava"
+    },
+    {
+      "id": "fc7a",
+      "nome": "Festa",
+      "endereco": "Seila, 500 - Velha"
+    }
+  ],
+  "contatos": [
+    {
+      "id": "2b6d",
+      "nome": "André",
+      "telefone": "9999999",
+      "email": "contato@gmail.com"
+    },
+    {
+      "id": "3d96",
+      "nome": "André Teste 25",
+      "telefone": "9999997",
+      "email": "contatooo@gmail.com"
+    }
+  ]
+}
