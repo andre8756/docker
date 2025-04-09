@@ -26,7 +26,7 @@ EXPOSE 80
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copie a configuração personalizada do Nginx (opcional, veja o Passo 4)
-COPY nginx.conf /etc/nginx/conf.d/
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copie os arquivos de build do Angular para a pasta de arquivos estáticos do Nginx
 COPY --from=0 /app/dist/app-agenda /usr/share/nginx/html
