@@ -16,7 +16,7 @@ services:
     image: node:18-alpine
     working_dir: /app
     volumes:
-      - .docker/src/dados/db.json
+      - agenda_db_data:/app
     ports:
       - "3000:3000"
     command: json-server --watch db.json --port 3000
@@ -26,3 +26,6 @@ services:
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  agenda_db_data:
