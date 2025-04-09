@@ -29,7 +29,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Copie os arquivos de build do Angular para a pasta de arquivos estáticos do Nginx
-COPY --from=0 /app/dist/seu-projeto /usr/share/nginx/html
+COPY --from=0 /app/dist/app-agenda /usr/share/nginx/html
 
 # Comando para iniciar o Nginx
 CMD ["nginx", "-g", "daemon off;"]
