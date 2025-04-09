@@ -19,7 +19,7 @@ services:
     image: node:18-alpine
     working_dir: /app
     volumes:
-      - agenda_db_data:/app
+      - agenda_db_data:/dados
     ports:
       - "3000:3000"
     command: json-server --watch db.json --port 3000
