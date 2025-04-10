@@ -25,31 +25,5 @@ EXPOSE 3000
 # --- ADICIONADO: --watch db.json --- para habilitar a escrita/persistência
 
 CMD ["npx", "json-server", "--watch", "db.json", "--host", "0.0.0.0"]
- # Use a lightweight Node.js image
 
-FROM node:20-alpine
- 
-# Set the working directory inside the container
-
-WORKDIR /app
- 
-# Copy only the db.json file needed by the server
-
-RUN npm install -g json-server
-
-# Isso garante que o volume seja populado com os dados iniciais na primeira execução
-
-COPY ./src/dados/db.json .
- 
-# Expose the default json-server port
-
-EXPOSE 3000
- 
-# Command to run json-server
-
-# Use --host 0.0.0.0 to allow connections from outside the container
-
-# --- ADICIONADO: --watch db.json --- para habilitar a escrita/persistência
-
-CMD ["npx", "json-server", "--watch", "./src/dados/db.json", "--host", "0.0.0.0"]
  
